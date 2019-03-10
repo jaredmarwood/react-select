@@ -1182,7 +1182,7 @@ export default class Select extends Component<Props, State> {
         break;
       case 'Enter':
         if (menuIsOpen) {
-          if (!focusedOption) return;
+          //if (!focusedOption) return;
           if (isComposing) return;
           this.selectOption(focusedOption);
           break;
