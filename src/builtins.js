@@ -6,7 +6,7 @@ export const formatGroupLabel = (group: GroupType): string => group.label?group.
 
 export const getOptionLabel = (option: OptionType): string => option.label?option.label:'';
 
-export const getOptionValue = (option: OptionType): string => option.value/option.value:'';
+export const getOptionValue = (option: OptionType): string => option.value?option.value:'';
 
 export const isOptionDisabled = (option: OptionType): boolean =>
   !!option.isDisabled;
